@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JVIEN - Movie Recommendation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="MainCss.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url('cover.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    }
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="MoviesSection.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MOVIES</a>
+    <a href="SeriesSection.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERIES</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="AboutPage.html" class="w3-bar-item w3-button">About Page</a>
+        <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h1 class="w3-wide" style="color: white;"><b>JVIEN RECO</b></h1>
+    <h3 class="w3-opacity" style="color: white;"><i>Your Ultimate Movie & Series Recommendation Hub</i></h3>
+    <h5 class="w3-justify" style="color: white;">
+        Welcome to JVIEN RECO, your ultimate destination for personalized movie recommendations! Whether you're a fan of thrilling adventures, 
+        heartwarming romances, or thought-provoking dramas, we've got you covered. Discover hidden gems, explore popular hits, and find your next 
+        favorite film effortlessly. Dive into a world of cinematic wonders with JVIEN RECO today!</h5>
+    </div>
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
